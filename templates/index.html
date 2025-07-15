@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Datos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Contenedor principal -->
+    <div class="max-w-4xl mx-auto p-4">
+
+        <!-- Sección de Contexto e Imagen -->
+        <div class="flex justify-between items-center mb-8">
+            <div class="w-2/3">
+                <h1 class="text-4xl font-bold text-gray-800">Bienvenidos al Registro</h1>
+                <p class="text-gray-600 mt-4">Este es un pequeño formulario para registrar tus datos. Ingresa tu nombre, apellido y fecha para ser almacenado en nuestra base de datos.</p>
+            </div>
+            <div class="w-1/3">
+              <a href="https://ibb.co/nsyqWLqW"><img src="https://i.ibb.co/d0vsh5sh/VG.jpg" alt="VG" border="0"></a>   
+            </div>
+        </div>
+
+        <!-- Formulario de Registro -->
+        <form action="/registrar" method="POST" class="bg-white p-6 rounded-lg shadow-md">
+            <div class="mb-4">
+                <label for="nombre" class="block text-gray-700">Nombre</label>
+                <input type="text" id="nombre" name="nombre" class="w-full p-3 mt-2 border rounded-lg" required>
+            </div>
+            <div class="mb-4">
+                <label for="apellido" class="block text-gray-700">Apellido</label>
+                <input type="text" id="apellido" name="apellido" class="w-full p-3 mt-2 border rounded-lg" required>
+            </div>
+            <div class="mb-4">
+                <label for="fecha" class="block text-gray-700">Fecha</label>
+                <input type="date" id="fecha" name="fecha" class="w-full p-3 mt-2 border rounded-lg" required>
+            </div>
+            <button type="submit" class="w-full py-3 bg-blue-500 text-white rounded-lg mt-4 hover:bg-blue-600 transition duration-300">Registrar</button>
+        </form>
+    </div>
+
+</body>
+</html>
